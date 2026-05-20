@@ -1,0 +1,39 @@
+
+ >>>>> started run at 26/02/2026 15:06:58>>>ERROR<<<
+OMP: Info #276: omp_set_nested routine deprecated, please use omp_set_max_active_levels instead.
+{'data_path': ['/Volumes/Ian8TB/20260216_Mesh_MEA/mesh_gcamp_videos/exp11'], 'subfolders': [], 'save_path0': '/Volumes/Ian8TB/20260216_Mesh_MEA/mesh_gcamp_videos/exp11', 'fast_disk': '/Volumes/Ian8TB/20260216_Mesh_MEA/mesh_gcamp_videos/exp11', 'input_format': 'tif'}
+tif
+** Found 1 tifs - converting to binary **
+2000 frames of binary, time 5.84 sec.
+time 6.97 sec. Wrote 2000 frames per binary for 1 planes
+>>>>>>>>>>>>>>>>>>>>> PLANE 0 <<<<<<<<<<<<<<<<<<<<<<
+NOTE: not registered / registration forced with ops['do_registration']>1
+      (no previous offsets to delete)
+NOTE: applying default /Users/mayayin/.suite2p/classifiers/classifier_user.npy
+----------- REGISTRATION
+Reference frame, 17.32 sec.
+Registered 500/2000 in 10.93s
+Registered 1000/2000 in 20.16s
+Registered 1500/2000 in 29.44s
+Registered 2000/2000 in 38.84s
+----------- Total 62.33 sec
+Registration metrics, 84.81 sec.
+----------- ROI DETECTION
+Binning movie in chunks of length 30
+Binned movie of size [66,512,512] created in 0.45 sec.
+NOTE: estimated spatial scale ~6 pixels, time epochs 1.00, threshold 5.00 
+0 ROIs, score=56.80
+Detected 246 ROIs, 2.38 sec
+After removing overlaps, 243 ROIs remain
+----------- Total 3.00 sec.
+----------- EXTRACTION
+Masks created, 0.38 sec.
+Extracted fluorescence from 243 ROIs in 2000 frames, 2.61 sec.
+----------- Total 3.18 sec.
+----------- CLASSIFICATION
+['compact', 'npix_norm', 'skew']
+----------- SPIKE DECONVOLUTION
+----------- Total 0.02 sec.
+Plane 0 processed in 153.57 sec (can open in GUI).
+total = 160.73 sec.
+TOTAL RUNTIME 160.73 sec

@@ -1,0 +1,113 @@
+Experiment: Electrical Recording and Stimulation with Calcium Imaging
+Date: 2026.02.16
+
+Setup: hCO with MEA-Fluidpocket-3
+
+All electrodes tested before experiments. 18 MEA electrodes, ~100-200 kOhm at 1000 Hz.
+Sampling frequency: 30 kHz.
+Reference channels: A-016, A-029, B-024 (hardware references).
+60 Hz hardware notch filter applied.
+
+Electrode group color coding:
+  Blue:   A-008, A-009, A-010, A-011, A-030, A-031
+  Orange: A-017, A-018, A-019, A-020, A-021, A-022
+  Purple: B-010, B-011, B-012, B-013, B-014, B-015
+
+------------------------------------------------------------------------------
+SELECTED EXPERIMENTS (electrical stimulation + Ca imaging)
+------------------------------------------------------------------------------
+
+Exp6  |  03:14:00 pm  |  Exp6_organoid_stim_scope_260216_151400
+
+Stim. parameters: biphasic, +/-50 uA, 5 ms/phase, 5 pulses, 20 Hz.
+Stim. channels: A-005, A-008, A-009, A-010, A-011, A-017, A-018, A-019,
+                A-020, A-021*, A-022, A-030, A-031, B-010, B-011, B-012,
+                B-013, B-014, B-015.
+Stim. applied at: 38.5 s, 78.5 s, 111.5 s.
+
+Post-stimulation activity on A-021*. Prolonged activity, disappeared in 5-10 s.
+Electrical recording start: 03:14:00.663419 pm
+Ca imaging: Baseline_Gcamp8s_mea_mesh_50uA 10ms 20hz all electrodes_0010.oib
+            Start: 03:14:13.681 pm
+Ca active region: all.
+
+----------
+
+Exp8  |  03:30:20 pm  |  Exp8_organoid_stim_scope_fewer_electrodes_260216_153020
+
+Stim. parameters: biphasic, +/-50 uA, 5 ms/phase, 5 pulses, 20 Hz.
+Stim. channels: A-008, A-009, A-010, A-011, A-030, A-031.
+Stim. applied at: 20.5 s, 50.5 s, 81.5 s, 112 s.
+
+Electrical recording start: 03:30:20.423380 pm
+Ca imaging: Baseline_Gcamp8s_mea_mesh_1site_50uA, 10ms 20hz_0014.oib
+            Start: 03:30:20.501 pm
+Ca active region: lower left, top, same arm.
+
+----------
+
+Exp11  |  03:43:48 pm  |  Exp11_organoid_stim_scope_fewer_electrodes_50micro_amp_260216_154348
+
+Stim. parameters: biphasic, +/-50 uA, 5 ms/phase, 5 pulses, 20 Hz.
+Stim. channels: A-008*, A-009*, A-010*, A-011*, A-030, A-031*.
+Stim. applied at: 25 s, 55 s, 85 s, 115 s.
+
+Post-stimulation activity on A-008*, A-009*, A-010*, A-011*, A-031*.
+Synchronized spikes on A-008, A-009, A-010, A-011, A-030, A-031 at ~55 s and ~86 s.
+Electrical recording start: 03:43:48.800631 pm
+Ca imaging: Baseline_Gcamp8s_mea_mesh_1site_50uA, 10ms 20hz_0014_secondtime_0018.oib
+            Start: 03:43:50.125 pm
+Ca active region: top, lower left, right.
+
+NOTE: Example data included in this repository (Intan_output_example/) corresponds to Exp11.
+
+----------
+
+Exp14  |  03:59:34 pm  |  Exp14_organoid_stim_scope_fewer_electrodes_50micro_amp_5Hz_purple_260216_155934
+
+Stim. parameters: biphasic, +/-50 uA, 5 ms/phase, 5 pulses, 5 Hz.
+Stim. channels: B-010, B-011, B-012, B-013*, B-014, B-015.
+Stim. applied at: 25.5 s, 55 s, 85 s, 115 s.
+
+Post-stimulation activity on B-011*, B-013*. Prolonged activity, disappeared in ~5 s.
+Electrical recording start: 03:59:34.989363 pm
+Ca imaging: Baseline_Gcamp8s_mea_mesh_1site_50uA, 10ms 5hz_0137.oib
+            Start: 03:59:33.585 pm
+Ca active region: bottom right.
+
+NOTE: Example data included in this repository (Suite2p_output_example/) corresponds to Exp14.
+
+----------
+
+Exp15  |  04:03:25 pm  |  Exp15_organoid_stim_scope_fewer_electrodes_50micro_amp_100Hz_purple_260216_160325
+
+Stim. parameters: biphasic, +/-50 uA, 5 ms/phase, 5 pulses, 100 Hz.
+Stim. channels: B-010, B-011*, B-012, B-013, B-014, B-015.
+Stim. applied at: 24.5 s, 54.5 s, 85 s, 114.5 s.
+
+Post-stimulation activity on B-011*. Prolonged activity, disappeared in ~5 s.
+Electrical recording start: 04:03:25.503123 pm
+Ca imaging: Baseline_Gcamp8s_mea_mesh_1site_50uA, 10ms 100hz_0014_0138.oib
+            Start: 04:03:24.024 pm
+Ca active region: bottom right.
+
+------------------------------------------------------------------------------
+NOTES
+------------------------------------------------------------------------------
+
+* Channels with prominent post-stimulation spike activity.
+
+Optimal stimulation response: biphasic, +/-50 uA, 5 ms/phase, 5 pulses, 20 Hz.
+Recommended filter: 60 Hz notch, 300-5000 Hz bandpass.
+Water splitting observed at highest amplitude (+/-50 uA), delta_V > 1.5 V.
+Most stimulations delivered every ~30 s.
+
+------------------------------------------------------------------------------
+DATA AVAILABILITY
+------------------------------------------------------------------------------
+
+Raw GCaMP and Intan electrical recording (.rhs) files for Exp6, Exp8,
+Exp11, Exp14, and Exp15 are publicly available. 
+The example data included in this repository (Intan_output_example/ and
+Suite2p_output_example/) are downsampled/cropped subsets sufficient to run
+the analysis code end-to-end.

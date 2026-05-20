@@ -1,0 +1,8 @@
+.DS_Store
+.Rhistory
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+example_output/
+suite2p_example_output/
