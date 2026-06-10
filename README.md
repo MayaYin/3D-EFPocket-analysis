@@ -9,18 +9,19 @@ Analysis code accompanying the manuscript. Three independent pipelines cover ele
 ```
 mesh_submission/
 ├── Python_electrical_optical/
-│   ├── electrical_analysis_mesh.ipynb     # Electrophysiology pipeline (Intan RHS)
-│   ├── mesh_suite2p_output.ipynb          # Calcium imaging pipeline (Suite2p output)
-│   ├── load_intan_rhs.py                  # Intan RHS file reader
-│   ├── importrhdutilities.py              # Intan RHD file utilities
-│   ├── intanutil/                         # Intan parser helpers (header, data, filter, report)
-│   ├── Intan_output_example/              # Example RHS recording (3 consecutive files)
-│   └── Suite2p_output_example/            # Example Suite2p output (plane0 .npy files)
+│   ├── electrical_analysis_mesh.ipynb                 # Electrophysiology pipeline (Intan RHS)
+│   ├── mesh_suite2p_output.ipynb                      # Calcium imaging pipeline (Suite2p output)
+|   ├── Latency plot by fluorescence intensity.ipynb   # Latency plot of electrical stimulation
+│   ├── load_intan_rhs.py                              # Intan RHS file reader
+│   ├── importrhdutilities.py                          # Intan RHD file utilities
+│   ├── intanutil/                                     # Intan parser helpers (header, data, filter, report)
+│   ├── Intan_output_example/                          # Example RHS recording (3 consecutive files)
+│   └── Suite2p_output_example/                        # Example Suite2p output (plane0 .npy files)
 │
 └── R_optical_fromFIJI/
-    ├── Multi_Site_GCAMP8s_Fchange.R       # GCaMP + Glutamate dF/F analysis
-    ├── Results_gcamp_*.csv                # FIJI ROI measurements — GCaMP channel
-    └── Results_glutamate_*.csv            # FIJI ROI measurements — Glutamate sensor channel
+    ├── Multi_Site_GCAMP8s_Fchange.R                   # GCaMP + Glutamate dF/F analysis
+    ├── Results_gcamp_*.csv                            # FIJI ROI measurements — GCaMP channel
+    └── Results_glutamate_*.csv                        # FIJI ROI measurements — Glutamate sensor channel
 ```
 
 ---
